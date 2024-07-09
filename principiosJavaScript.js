@@ -1,103 +1,118 @@
 // Pasito a pasito con Js 🐢
-
 console.log("la Consola es fundamental SIEMPRE");
 
+//1️⃣COMENTARIOS----------
 //comentarios de una linea
 /* comentarios varias lineas*/
 
-//Js tipado débil y dinámico, debil porqué no se lo impones, y dinámico porque lo detecta.
+//Js tipado débil y dinámico//
 
+//2️⃣VARIABLES----------
 
-//tipos de variables
+// tipos de variables
+// var let y const
 
+//diferencias entre var y let
+// if(true){
+//     var variableWithVar = 1
+//     let variableWithLet = 2
+//    }
 
-/* Hace referencia al alcance, var no respeta del todo si estas dentro o fuera mientras
- let si lo tiene en cuenta por eso es aconsejable usar let
- en vez de var, const mantien un valor constante.*/
+// console.log(variableWithVar)
+// console.log(variableWithLet)
 
-//es sensible a mayusculas y minusculas nombrecasa  nombreCasa nombrECasa
+const coder = "Fátima"
+const teacher = "Ana"
 
-var Myname = "Celia";
-let  edad = 30;
-const cityBorn = "Madrid";
-cityBorn.length;
-console.log(cityBorn.length);
+//3️⃣OPERADORES Y PALABRAS RESERVADAS----------
 
-
-//tipos de datos
-let speciesName = "Tortuga"; //string
-let specimen = 8; //number 
-let extincion = false; //boolean
-// null, // una inexistente o inválido objeto o dirección
-// undefined
-// let surname;
-
-// BigInt, symbol ;
-
-// console.log(surname);
-
-// gestión de datos
-
-//Arrays son listas
-let list = ["pera", "manzana", "melocotón"];
-//objetos tienen propiedades.
-let fruta = {
-    pepitas: true,
-    piel: true,
-    cascara: false,
-    color : ["rojas", "verdes", "amarillas"]
-}
-
-
-//viajar dentro de los objetos los Arrays son los Json que leera e interpretara Js y con ellos le transmite información al resto de lenguajes.
-
-//operadores
 const operadoresJs = "+,-,*,/,>,< =,!=, === "
+
+//operadores aritméticos
+//operadores Comparación
 
 // https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators
 
-/*Igual( ==) Devuelve truesi los operandos son iguales.
+console.log(4 > 2 || 2 < 1)
+
+/*Igual( ==) Devuelve true si los operandos son iguales.
 No es igual( !=)
 Estrictamente igual( ===) Devuelve true si los operandos son iguales y del mismo tipo.
 Desigualdad estricta( !==) Devuelve true si los operandos son del mismo tipo pero no iguales, o son de diferente tipo
-
+> Mayor que
+< Menor que
+//Operadores lógicos
 && and
 || or
-
 */
-//Las funciones 🤩
-//estructura
-//¿Qué son las funciones y métodos JavaScript?
-//enseñar gift de la máquina.
 
-//Una función en JavaScript es similar a un procedimiento — 
-// un conjunto de instrucciones que realiza una tarea o calcula 
-// un valor, pero para que un procedimiento califique como función,
-//  debe tomar alguna entrada y devolver una salida donde hay alguna 
-//  relación obvia entre la entrada y la salida.
 
-function nombreDelaFuncion(){
- "cosas que pasan dentro de la funcion"
-};
 
-function sumaSimple(){
-    var numberA = 1;
-    let numberB = 8;
-    result = numberA + numberB
-    return result;
+//4️⃣TIPOS DE DATOS----------
+
+//type number
+let ageTeacher = 32
+
+console.log(ageTeacher)
+//type boolean
+const isAdmin = false;
+//type null
+const DNI = null
+const typeUndefined = undefined
+//Arrays
+const coders = ["Sara", "Oury", "César", "Dario"]
+
+
+//objetos {}
+
+ let nombreObjeto = {
+ clave: 'valor', clave: 'valor'}
+let juan = {
+    name: "Juan",
+    age: 30,
+    direction: null,
+    isAdmin: true
 }
 
-//hablar del alcance de las variables.
+// console.log(juan.age);
 
-function suma(a,b){
-  result = a + b
-  return result;
+//Array de objetos
+const users = [
+    { id: 1, name: "Ana" }, { id: 2, name: "Pedro" }
+]
+
+
+//5️⃣FUNCIONES----------
+
+function elNombreDeMiFuncion(){
+
+    "escribimos lo que hace nuestro función"
+
+    return "devolver algo"
+
 }
 
-//Olvide decir parámetros (a,b) Argumentos (3,6)
-//------->>>>retomando la clase<<<<-------
+function saidGoodBye(){
+    return "Good Bye"
+}
+
+
+const suma = 1 + 1
+// console.log(suma)
+
+function sumar(a,b){
+    return a + b
+}
+
+console.log(suma)
+console.log(sumar(2,3))
+console.log(sumar(4,5))
+
+sumar()
+
+
+// parámetros (a,b) Argumentos (3,6)
 //funciones PURAS e IMPURAS
-//cosas que nos encontramos por ahí arrayFunction
 
 //pura
 function sumaPura(a,b){
@@ -195,7 +210,7 @@ console.log(bucleWhile(10));
 
 
 
-//estrutura de bcle for nos permite en una sola linea
+//estrutura de bucle for nos permite en una sola linea
 
 // for(inicializacion; condicion de permanencia: la actualizacion){
 
